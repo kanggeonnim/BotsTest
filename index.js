@@ -12,7 +12,7 @@ console.log(token);
 const rtm = new RTMClient(token);
 
 const test_channel = "C04C774L88Y";
-const test_uID = "U0486MGJDAL"
+const test_uID = "U04BHDBNS67"
 const testResultList = [0];
 
 const successMessage = function (testNum) {
@@ -107,7 +107,7 @@ rtm.on('message', async (message) => {
                 console.log('테스트 #4-2 시작');
                 break;
             case 4.2:
-                if(text === 'Computer Science and Engineering - College of Engineering Building 7, 224입니다.') {
+                if(text === 'Computer Science and Engineering - College of Engineering Building 7, 224') {
                     console.log(successMessage(4.2));
                     testResultList.push(1);
                 } else {
